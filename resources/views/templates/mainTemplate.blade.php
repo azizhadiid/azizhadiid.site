@@ -46,31 +46,20 @@
         <div class="header-container d-flex flex-column align-items-start">
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-                    <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+                    <li><a href="/" class="active"><i class="bi bi-house navicon"></i>Beranda</a></li>
+                    <li><a href="#Tentang"><i class="bi bi-person navicon"></i> Tentang</a></li>
                     <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-                    <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-                    <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-                    <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i
-                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <li class="dropdown"><a href="#portfolio"><i class="bi bi-images navicon"></i>
+                            <span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
-                            <li><a href="#">Dropdown 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Dropdown 1</a></li>
-                                    <li><a href="#">Deep Dropdown 2</a></li>
-                                    <li><a href="#">Deep Dropdown 3</a></li>
-                                    <li><a href="#">Deep Dropdown 4</a></li>
-                                    <li><a href="#">Deep Dropdown 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Dropdown 2</a></li>
-                            <li><a href="#">Dropdown 3</a></li>
-                            <li><a href="#">Dropdown 4</a></li>
+                            <li><a href="#">Full Stact WebDev</a></li>
+                            <li><a href="#">Front End WebDev</a></li>
+                            <li><a href="#">Back End WebDev</a></li>
+                            <li><a href="#">UI&UX Design</a></li>
                         </ul>
                     </li>
-                    <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+                    <li><a href="#Skill"><i class="bi bi-hdd-stack navicon"></i> Skill</a></li>
+                    <li><a href="#Kontak"><i class="bi bi-envelope navicon"></i> Kontak</a></li>
                 </ul>
             </nav>
 
@@ -78,7 +67,7 @@
                 <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+                <a href="#" class="google-plus"><i class="bi bi-github"></i></a>
                 <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
 
@@ -94,8 +83,15 @@
 
         <div class="container">
             <div class="copyright text-center ">
-                <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights
+                <p>© <span>Copyright</span> <strong class="px-1 sitename">Aziz.site</strong> <span>All Rights
                         Reserved</span></p>
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you've purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+                Designed by <a href="/">Aziz Alhadiid</a>
             </div>
         </div>
 
@@ -114,14 +110,14 @@
     <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
     <script src="{{ asset('assets/vendor/typed.js/typed.umd.js') }}"></script>
     <script src="{{ asset('assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="{{ asset('assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
+    <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
 
     <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 
 </body>
 
