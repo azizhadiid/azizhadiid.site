@@ -64,11 +64,11 @@
             </nav>
 
             <div class="social-links text-center">
-                <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bi bi-github"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="https://x.com/AzizHadiid1" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.facebook.com/share/1fUG1GG9U8/" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/alhadiid_aziz?igsh=MWxncnd0bjBuOGt1Mw==" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/azizhadiid" class="google-plus"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/aziz-alhadiid/" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
 
         </div>
