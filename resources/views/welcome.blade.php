@@ -14,6 +14,35 @@
     <div class="hero-content">
 
         <div class="container">
+            <div class="row">
+                {{-- Error Alert --}}
+                @if ($errors->any())
+                <div class="alert alert-danger alert-dismissible fade show mt-3" role="alert" style="width: 100%">
+                    <i class="bi bi-exclamation-circle-fill me-2"></i>
+                    {{ $errors->first() }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+
+                {{-- Success Alert --}}
+                @if (session('success'))
+                <div class="alert alert-success alert-dismissible fade show mt-3" role="alert" style="width: 100%">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+
+                {{-- Status Alert --}}
+                @if (session('status'))
+                <div class="alert alert-success alert-dismissible fade show mt-3" role="alert" style="width: 100%">
+                    <i class="bi bi-check-circle-fill me-2"></i>
+                    {{ session('status') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+            </div>
+
             <div class="row align-items-center">
 
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
@@ -280,4 +309,285 @@
     </div>
 
 </section><!-- /Skills Section -->
+
+<!-- Resume Section -->
+<section id="resume" class="resume section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Saya adalah seorang mahasiswa Sistem Informasi di Universitas Jambi yang antusias membangun solusi digital
+            melalui pengembangan web, desain UI/UX, dan manajemen basis data. Di bawah ini adalah ringkasan pengalaman,
+            proyek, dan keahlian saya yang mencerminkan perjalanan profesional dan akademik saya sejauh ini.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+            <!-- Left column with summary and contact -->
+            <div class="col-lg-4" style="height: 80%">
+                <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
+                    <div class="profile-img mb-4">
+                        <img src="{{ asset('assets/img/Profile.jpg') }}" alt="Aziz Alhadiid" class="img-fluid rounded">
+                    </div>
+
+                    <h3>Tentang Saya</h3>
+                    <p>Mahasiswa Sistem Informasi Universitas Jambi dengan keahlian Web Development dan UI/UX Design.
+                        Berpengalaman mengembangkan aplikasi menggunakan Laravel, React, Next.js, dan MySQL melalui
+                        berbagai proyek seperti Dengue Server (Gemastik 2024), Calon Cerdas, PuskeSmart, e-commerce Rasa
+                        Tangkit, dan Legends Room (Juara 1 Web Programming Study Club 2025). Terbiasa bekerja secara
+                        kolaboratif, memiliki semangat belajar tinggi, dan aktif membagikan karya di GitHub dan LinkedIn
+                        sebagai bentuk konsistensi profesional.</p>
+
+                    <h3 class="mt-4">Informasi Kontak</h3>
+                    <ul class="contact-info list-unstyled">
+                        <li><i class="bi bi-geo-alt"></i> Kota Jambi, Jambi Indonesia</li>
+                        <li><i class="bi bi-envelope"></i> azizalhadiid55@gmail.com</li>
+                        <li><i class="bi bi-phone"></i> (+62) 81366705844</li>
+                        <li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/aziz-alhadiid/"
+                                style="text-decoration: none">linkedin.com/in/aziz-alhadiid/</a></li>
+                    </ul>
+
+                    <div class="skills-animation mt-4">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <span>Web Development</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="d-flex justify-content-between">
+                                <span>UI/UX Design</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right column with experience and education -->
+            <div class="col-lg-8 ps-4 ps-lg-5">
+                <!-- Experience Section -->
+                <div class="resume-section" data-aos="fade-up">
+                    <h3><i class="bi bi-briefcase me-2"></i>Pengalaman Kerja</h3>
+
+                    <div class="resume-item">
+                        <h4>Laravel Back-End Developer</h4>
+                        <h5>Feb - Jun 2025</h5>
+                        <p class="company"><i class="bi bi-building"></i> Universitas Jambi (Proyek Kampus).</p>
+                        <ul>
+                            <li>Memimpin pengembangan platform e-commerce berbasis Laravel untuk mendukung pemasaran
+                                produk olahan dari Desa Tangkit Baru.</li>
+                            <li>Membangun backend sistem menggunakan Laravel 12, mencakup manajemen produk, pesanan, dan
+                                pengguna.</li>
+                            <li>Mengintegrasikan sistem payment gateway Midtrans untuk transaksi yang cepat dan aman.
+                            </li>
+                            <li>Mengatur alur kerja tim, membagi tugas, dan melakukan review serta pengujian
+                                fungsionalitas sistem.</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <h4>Back-End Web Developer</h4>
+                        <h5>Feb 2025</h5>
+                        <p class="company"><i class="bi bi-building"></i>Himpunan Mahasiswa Sistem Informasi Universitas
+                            Jambi (HIMASI UNJA)</p>
+                        <ul>
+                            <li>Juara 1 Study Club Batch 4 Divisi Pemrograman Web
+                                Himpunan Sistem Informasi Universitas Jambi Februari 2025.</li>
+                            <li>Ketua tim proyek Legends Room, platform penyewaan ruangan berbasis Laravel 11 &
+                                Bootstrap 5. </li>
+                            <li>Bertanggung jawab atas pengembangan back-end dan integrasi UI/UX yang responsif.</li>
+                            <li>Mengelola struktur database dan mengimplementasikan autentikasi pengguna.</li>
+                            <li>Merancang desain website yang responsive menggunakan Bootstrap 5.</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <h4>Front-End Web Developer</h4>
+                        <h5>Agu - Des 2024</h5>
+                        <p class="company"><i class="bi bi-building"></i> Universitas Jambi (Proyek Kampus).</p>
+                        <ul>
+                            <li>Memimpin tim pengembangan platform PuskeSmart. </li>
+                            <li>Mengembangkan UI PuskeSmart, sistem pendaftaran berobat puskesmas berbasis web.</li>
+                            <li>Menerapkan desain responsif dan animasi JavaScript untuk pengalaman pengguna yang
+                                interaktif. </li>
+                            <li>Mengoptimalkan tampilan dengan Bootstrap 4 dan user-friendly.</li>
+                            <li>Fokus pada desain yang intuitif di berbagai perangkat.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="bi bi-mortarboard me-2"></i>Pendidikan</h3>
+
+                    <div class="resume-item">
+                        <h4>S1 Sistem Informasi</h4>
+                        <h5>2023 - Sekarang</h5>
+                        <p class="company"><i class="bi bi-building"></i> Universitas Jambi</p>
+                        <ul>
+                            <li>Juara 1 Study Club Batch 4 Divisi Pemrograman Website. </li>
+                            <li>Nilai A pada mata kuliah Rekayasa Perangkat Lunak,
+                                Pemrograman Website 1 & 2</li>
+                            <li>Anggota aktif Study Club Divisi Pemrograman Website dan UI/UX Design (Batch 2, 3, 4).
+                            </li>
+                            <li>Volunteer SI FUNDAY 2024 sebagai Pendamping Gugus.</li>
+                            <li>Kontributor kegiatan Pengabdian Masyarakat: Pendamping TI untuk Praktek Dokter Bersama
+                                Patimura.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Certifications Section -->
+                <div class="resume-section" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="bi bi-award me-2"></i>Sertifikat</h3>
+
+                    <div class="resume-item">
+                        <h4>Study Club Batch 4 Divisi Pemrograman Web 2</h4>
+                        <h5>2025</h5>
+                    </div>
+
+                    <div class="resume-item">
+                        <h4>Study Club Batch 3 Divisi Pemrograman Web 1</h4>
+                        <h5>2024</h5>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Study Club Batch 2 Divisi UI/UX Design</h4>
+                        <h5>2024</h5>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Belajar Membuat Front-End Web untuk Pemula</h4>
+                        <h5>Mei 2025 - Mei 2028</h5>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Belajar Dasar Pemrograman JavaScript</h4>
+                        <h5>April 2025 - April 2028</h5>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Belajar Dasar Pemrograman Web</h4>
+                        <h5>Mar 2025 - Mar 2028</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section><!-- /Resume Section -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contact Section -->
+<section id="Kontak" class="contact section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Kontak</h2>
+        <p>Silakan hubungi saya untuk kolaborasi, proyek freelance, atau pertanyaan seputar pengembangan web dan desain
+            UI/UX. Saya akan dengan senang hati merespons secepat mungkin.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row g-4 g-lg-5">
+            <div class="col-lg-5">
+                <div class="info-box">
+                    <h3>Kontak Informasi</h3>
+                    <p>
+                        <p>Hubungi saya untuk kolaborasi atau pertanyaan lebih lanjut.</p>
+
+                        <div class="info-item">
+                            <div class="icon-box">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Lokasi Saya</h4>
+                                <p>Jl. Pagai No2. Rt.20</p>
+                                <p>Jambi, Kota Jambi</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-box">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Nomor HP</h4>
+                                <p>(+62) 81366705844</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="icon-box">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div class="content">
+                                <h4>Alamat Email</h4>
+                                <p>azizalhadiid55@gmail.com</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="contact-form">
+                    <h3>Hubungi Saya</h3>
+                    <p>Terbuka untuk kolaborasi, proyek freelance, atau pertanyaan lainnya.</p>
+
+                    <form action="{{ route('kontak.kirim') }}" method="post">
+                        @csrf
+                        <div class="row gy-4">
+
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Nama Anda" required="">
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="email" class="form-control" name="email" placeholder="Email Anda"
+                                    required="">
+                            </div>
+
+                            <div class="col-12">
+                                <input type="text" class="form-control" name="subject" placeholder="Subyek" required="">
+                            </div>
+
+                            <div class="col-12">
+                                <textarea class="form-control" name="message" rows="6" placeholder="Pesan"
+                                    required=""></textarea>
+                            </div>
+
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn">Kirim Pesan</button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section><!-- /Contact Section -->
 @endsection
