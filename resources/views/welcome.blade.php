@@ -486,15 +486,66 @@
 
 </section><!-- /Resume Section -->
 
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
 
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Berikut adalah beberapa proyek yang telah saya kerjakan, mulai dari pengembangan aplikasi web, desain UI/UX,
+            hingga integrasi sistem backend. Setiap proyek mencerminkan pendekatan saya terhadap solusi digital yang
+            fungsional dan estetis.</p>
+    </div><!-- End Section Title -->
 
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
+            <div class="row">
+                <div class="col-lg-3 filter-sidebar">
+                    <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
+                        <ul class="portfolio-filters isotope-filters">
+                            <li data-filter="*" class="filter-active">Semua Proyek</li>
+                            <li data-filter=".filter-uiuxdesign">UI/UX Design</li>
+                            <li data-filter=".filter-frontend">Front-End</li>
+                            <li data-filter=".filter-backend">Back-End</li>
+                            <li data-filter=".filter-fullstack">Full-Stack</li>
+                        </ul>
+                    </div>
+                </div>
 
+                <div class="col-lg-9">
+                    <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
 
+                        @foreach ($portfolios as $item)
+                        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-uiuxdesign">
+                            <div class="portfolio-wrap">
+                                <img src="{{ asset($item->foto) }}" class="img-fluid"
+                                    alt="{{ $item->nama_proyek }}">
+                                <div class="portfolio-info">
+                                    <div class="content">
+                                        <span class="category">{{ $item->kategori }}</span>
+                                        <h4>{{ $item->nama_proyek }}</h4>
+                                        <div class="portfolio-links">
+                                            <a href="{{ asset($item->foto) }}" class="glightbox"
+                                                title="{{ $item->nama_proyek }}"><i class="bi bi-plus-lg"></i></a>
+                                            <a href="{{ route('portfolio.detail', $item->id) }}" title="Lihat Detail"><i
+                                                    class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- End Portfolio Item -->
+                        @endforeach
+                    </div><!-- End Portfolio Container -->
+                </div>
+            </div>
 
+        </div>
 
+    </div>
 
+</section><!-- /Portfolio Section -->
 
 <!-- Contact Section -->
 <section id="Kontak" class="contact section">
