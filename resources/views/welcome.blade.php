@@ -506,10 +506,10 @@
                     <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
                         <ul class="portfolio-filters isotope-filters">
                             <li data-filter="*" class="filter-active">Semua Proyek</li>
-                            <li data-filter=".filter-uiuxdesign">UI/UX Design</li>
-                            <li data-filter=".filter-frontend">Front-End</li>
-                            <li data-filter=".filter-backend">Back-End</li>
-                            <li data-filter=".filter-fullstack">Full-Stack</li>
+                            <li data-filter=".filter-UIUXDesign">UI/UX Design</li>
+                            <li data-filter=".filter-Frontend">Front-End</li>
+                            <li data-filter=".filter-Backend">Back-End</li>
+                            <li data-filter=".filter-Fullstack">Full-Stack</li>
                         </ul>
                     </div>
                 </div>
@@ -518,7 +518,7 @@
                     <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
 
                         @foreach ($portfolios as $item)
-                        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-uiuxdesign">
+                        <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-{{ $item->kategori }}">
                             <div class="portfolio-wrap">
                                 <img src="{{ asset($item->foto) }}" class="img-fluid"
                                     alt="{{ $item->nama_proyek }}">

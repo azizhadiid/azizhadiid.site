@@ -49,15 +49,7 @@
                     <li><a href="/" class="active"><i class="bi bi-house navicon"></i>Beranda</a></li>
                     <li><a href="#Tentang"><i class="bi bi-person navicon"></i> Tentang</a></li>
                     <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-                    <li class="dropdown"><a href="#portfolio"><i class="bi bi-images navicon"></i>
-                            <span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="#">Full Stact WebDev</a></li>
-                            <li><a href="#">Front End WebDev</a></li>
-                            <li><a href="#">Back End WebDev</a></li>
-                            <li><a href="#">UI&UX Design</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
                     <li><a href="#Skill"><i class="bi bi-hdd-stack navicon"></i> Skill</a></li>
                     <li><a href="#Kontak"><i class="bi bi-envelope navicon"></i> Kontak</a></li>
                 </ul>
@@ -66,7 +58,8 @@
             <div class="social-links text-center">
                 <a href="https://x.com/AzizHadiid1" class="twitter"><i class="bi bi-twitter-x"></i></a>
                 <a href="https://www.facebook.com/share/1fUG1GG9U8/" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/alhadiid_aziz?igsh=MWxncnd0bjBuOGt1Mw==" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.instagram.com/alhadiid_aziz?igsh=MWxncnd0bjBuOGt1Mw==" class="instagram"><i
+                        class="bi bi-instagram"></i></a>
                 <a href="https://github.com/azizhadiid" class="google-plus"><i class="bi bi-github"></i></a>
                 <a href="https://www.linkedin.com/in/aziz-alhadiid/" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
