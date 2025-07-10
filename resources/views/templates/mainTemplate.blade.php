@@ -50,7 +50,6 @@
                     <li><a href="#Tentang"><i class="bi bi-person navicon"></i> Tentang</a></li>
                     <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
                     <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-                    <li><a href="#Skill"><i class="bi bi-hdd-stack navicon"></i> Skill</a></li>
                     <li><a href="#Kontak"><i class="bi bi-envelope navicon"></i> Kontak</a></li>
                 </ul>
             </nav>
